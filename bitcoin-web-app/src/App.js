@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Coin from "./Coin";
+import icon from "../src/images/Abstract Circle 1.svg";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -27,6 +28,24 @@ function App() {
   )
   return (
     <>
+    <nav className="container">
+          <img src={icon} alt="Not find" className="title-image" />
+          <div className="title">Bitcoin</div>
+          <ul className="list item1" id="about">
+            About{" "}
+          </ul>
+          <ul className="list item2">Help</ul>
+          <ul className="list item3">Feature</ul>
+          <ul className="list item4">Signup</ul>
+          <ul className="list item5">
+            <div
+              style={{ position: "relative", bottom: "3px" }}
+              className="request"
+            >
+              Request demo
+            </div>
+          </ul>
+        </nav>
       <div className="coin-app">
         <div className="coin-search">
           <h1 className="coin-text">Search a currency</h1>
