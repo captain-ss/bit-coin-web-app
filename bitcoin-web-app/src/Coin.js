@@ -4,7 +4,7 @@ const Coin = ({ name, image, volume, price, symbol, priceChange,marketCap }) => 
   return (
     <div className="coin-container">
       <div className="coin-row">
-        {console.log(name, image)}
+       
         <div className="coin">
           <img src={image} alt="crypto" />
           <h1>{name}</h1>
